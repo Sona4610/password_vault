@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password vault</title>
+<style>
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'system.ui',Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #fff;
+  color: #000;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+ .btn-dark {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition:all 0.3s ease;
+} 
+.btn-dark:hover {
+  background-color: #333;
+  transform: scale(1.08);    
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+}
+.btn-outline {
+  background-color:white;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition:all 0.3s ease;
+}
+.main {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+.left {
+  flex: 1;
+  background-color: #fef7e3; 
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.badge {
+  background-color: #b9f1c4;
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.left h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.reviews {
+  font-size: 0.85rem;
+  color: #555;
+}
+.right {
+  flex: 1;
+  background-color: #b9f1c4; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+ .service:hover {
+      transform: scale(1.04);
+ }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Password Vault</div>
+    <nav class="nav">
+    </nav>
+  </header>
+   <main class="main">
+    <section class="left">
+      <h1 class="product">“Your keys to the digital world, locked safely in one”<span class="badge">vault</span></h1>
+      <p>“No more remembering multiple passwords.Vault keeps everything encrypted and easy to retrieve.”</p>
+      <br>
+      <div class="cta">
+        <a href="add/" class="btn-dark">Add Details</a>
+        <a href="display/" class="btn-outline">Update Details</a>
+        <a href="display/" class="btn-outline">Display Details</a>
+      </div>
+     </section>
+   <section class="right">
+        <div class="service">
+          <img src="{% static 'imga.png' %}" alt="Vault Image" width="570" height="450">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+</body>
+</html>
